@@ -5,4 +5,14 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[dependencies.windows]
+version = "0.39.0"
+features = [
+  "implement",
+  "ApplicationModel_Core",
+  "UI_Core",
+  "Win32_Foundation",
+  "Win32_Storage_Packaging_Appx",
+  "Win32_System_Com",
+  "Win32_UI_WindowsAndMessaging",
+]
